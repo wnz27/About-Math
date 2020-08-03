@@ -3,13 +3,13 @@
 @LastEditors: 27
 @Date: 2020-03-29 23:12:42
 @LastEditTime: 2020-06-21 11:39:17
-@FilePath: /Coding-Daily/content/Python数据相关/线性代数学习/main_vector.py
+@FilePath: /Coding-Daily/content/Python数据相关/line_algebra_learn/main_vector.py
 @description: type some description
 '''
 # -*- coding:utf-8 -*-
 # Create by 27
 # @Time : 2020/3/29 23:12
-from content.Python数据相关.线性代数学习.playLA.Vector import Vector
+from content.line_algebra.line_algebra_learn.playLA.Vector import Vector
 
 __author__ = '27'
 
@@ -43,3 +43,8 @@ if __name__ == "__main__":
     print("norm({}) = {}".format(vec_n, vec_n.norm()))
     vec_n2 = Vector([3, 3, 3, 3])
     print("norm({}) = {}".format(vec_n2, vec_n2.norm()))
+
+    # 单位向量
+    print("normalize {} is {}".format(vec, vec.normalize()))
+    print(vec.normalize().norm())  # vec的单位向量的模长
+
