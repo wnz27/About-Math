@@ -24,6 +24,12 @@ class Vector:
         """
         return math.sqrt(sum(e**2 for e in self))
 
+    def normalize(self):
+        """
+        :return: 向量的单位向量
+        """
+        return 1 / self.norm() * Vector(self._values)
+
     def __add__(self, other):
         """
         向量加法，返回结果向量
