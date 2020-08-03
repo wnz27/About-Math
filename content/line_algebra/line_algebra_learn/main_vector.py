@@ -48,3 +48,10 @@ if __name__ == "__main__":
     print("normalize {} is {}".format(vec, vec.normalize()))
     print(vec.normalize().norm())  # vec的单位向量的模长
 
+    # 零向量返回单位向量
+    try:
+        zero2.normalize()
+    except ZeroDivisionError:
+        print("Cannot normalize zero vector {}.".format(zero2))
+
+

@@ -3,6 +3,7 @@
 # @Time : 2020/3/29 23:01
 __author__ = '27'
 import math
+from content.line_algebra.line_algebra_learn.playLA._global import EPSILON
 
 
 class Vector:
@@ -28,6 +29,8 @@ class Vector:
         """
         :return: 向量的单位向量
         """
+        if self.norm() < EPSILON:
+            raise ZeroDivisionError("Normalize error! norm is zero.")
         return Vector(self._values) / self.norm()
 
     def __add__(self, other):
