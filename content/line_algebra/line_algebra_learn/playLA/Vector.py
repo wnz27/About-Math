@@ -28,7 +28,7 @@ class Vector:
         """
         :return: 向量的单位向量
         """
-        return 1 / self.norm() * Vector(self._values)
+        return Vector(self._values) / self.norm()
 
     def __add__(self, other):
         """
@@ -63,6 +63,14 @@ class Vector:
         :return: 返回数量乘法的结果向量，k * self
         """
         return self * k
+
+    def __truediv__(self, k):
+        """
+        除法
+        :param k:
+        :return: 返回数量除法的结果向量，self / k
+        """
+        return (1 / k) * self
 
     def __pos__(self):
         """
