@@ -1,3 +1,11 @@
+<!--
+ * @Author: 27
+ * @LastEditors: 27
+ * @Date: 2026-09-06 20:29:52
+ * @LastEditTime: 2026-09-06 20:30:55
+ * @FilePath: /About-Math/README.md
+ * @description: type some description
+-->
 # About-Math
 
         ------Path to Math
